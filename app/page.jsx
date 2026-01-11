@@ -102,12 +102,12 @@ export default function PortfolioPage() {
         >
           <div className="md:col-span-5">
              {/* YOUR PORTRAIT IMAGE - Replace the src with your photo */}
-            <div className="relative aspect-[3/4] overflow-hidden grayscale">
+            <div className="relative aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-[1.5s] ease-in-out cursor-pointer">
                <Image 
                 src="/gautam.jpeg" 
                 alt="Gautam - Portrait"
                 fill
-                className="object-cover"
+                className="object-cover "
                />
             </div>
           </div>
@@ -179,7 +179,6 @@ export default function PortfolioPage() {
       </section>
 
       {/* FOOTER / CONTACT */}
-{/* ELEGANT SPLIT-SCREEN CONTACT SECTION */}
       <section id="contact" className="bg-[#EEEDE9] border-t border-black/5">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[85vh]">
           
