@@ -56,7 +56,7 @@ export default function PortfolioPage() {
       {/* NAV */}
       <nav className="fixed top-0 w-full z-40 flex justify-between p-8 mix-blend-difference text-white">
         <span className="tracking-[0.4em] text-xs uppercase">
-          GAUTAM / ARCHITECTURAL CONSULTANT
+          GAUTAM Architizer
         </span>
         {/* <span className="tracking-[0.4em] text-xs uppercase">
           Contact
@@ -83,7 +83,7 @@ export default function PortfolioPage() {
           <h1 className="font-serif text-[clamp(3rem,6vw,5rem)] leading-[1.05]">
             Gautam
             <br />
-            <span className="text-zinc-400">Consulting</span>
+            <span className="text-zinc-400">The Architizer</span>
           </h1>
 
           <p className="mt-6 text-lg text-[#444] max-w-md uppercase tracking-widest text-sm">
@@ -101,14 +101,14 @@ export default function PortfolioPage() {
           className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center"
         >
           <div className="md:col-span-5">
-             {/* YOUR PORTRAIT IMAGE - Replace the src with your photo */}
+            {/* YOUR PORTRAIT IMAGE - Replace the src with your photo */}
             <div className="relative aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-[1.5s] ease-in-out cursor-pointer">
-               <Image 
-                src="/gautam.jpeg" 
+              <Image
+                src="/gautam.jpeg"
                 alt="Gautam - Portrait"
                 fill
                 className="object-cover "
-               />
+              />
             </div>
           </div>
 
@@ -119,16 +119,30 @@ export default function PortfolioPage() {
             </h2>
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed font-light">
               <p>
-                <span className="text-white font-medium">Gautam</span> is a seasoned Civil and Architectural Consultant with a distinguished career spanning over two decades, delivering excellence across a broad spectrum of architectural design in India.
+                <span className="text-white font-medium">Gautam</span> is a
+                seasoned Civil and Architectural Consultant with a distinguished
+                career spanning over two decades, delivering excellence across a
+                broad spectrum of architectural design in India.
               </p>
               <p>
-                His professional journey began in 2007, and since then he has successfully completed <span className="text-white">300+ residential and commercial projects</span>, earning a reputation for precision, innovation, and design integrity.
+                His professional journey began in 2007, and since then he has
+                successfully completed{" "}
+                <span className="text-white">
+                  300+ residential and commercial projects
+                </span>
+                , earning a reputation for precision, innovation, and design
+                integrity.
               </p>
               <p>
-                With extensive expertise in luxury residential and high-end commercial architecture, Gautam brings a balanced approach that blends aesthetics, functionality, and structural excellence.
+                With extensive expertise in luxury residential and high-end
+                commercial architecture, Gautam brings a balanced approach that
+                blends aesthetics, functionality, and structural excellence.
               </p>
               <p>
-                Driven by a passion for design and innovation, he has shaped numerous urban landmarks that today stand proudly across multiple cities—defining skylines and elevating living experiences through architecture that inspires.
+                Driven by a passion for design and innovation, he has shaped
+                numerous urban landmarks that today stand proudly across
+                multiple cities—defining skylines and elevating living
+                experiences through architecture that inspires.
               </p>
             </div>
           </div>
@@ -138,12 +152,12 @@ export default function PortfolioPage() {
       {/* PROJECTS */}
       <section className="px-8 md:px-40 py-32">
         <div className="flex flex-col md:flex-row justify-between items-baseline mb-20 border-b border-black/10 pb-8">
-            <span className="text-[10px] uppercase tracking-[0.5em] text-zinc-400 block">
+          <span className="text-[10px] uppercase tracking-[0.5em] text-zinc-400 block">
             Selected Works
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-400 block mt-4 md:mt-0">
-                From a Portfolio of 300+ Projects
-            </span>
+          </span>
+          <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-400 block mt-4 md:mt-0">
+            From a Portfolio of 300+ Projects
+          </span>
         </div>
 
         <ProjectCard
@@ -170,7 +184,8 @@ export default function PortfolioPage() {
           className="max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-5xl font-light leading-tight mb-10 italic font-serif">
-            &quot;Every project reflects timeless elegance and practical value.&quot;
+            &quot;Every project reflects timeless elegance and practical
+            value.&quot;
           </h2>
           <p className="text-zinc-500 uppercase tracking-[0.3em] text-[10px]">
             — Gautam&apos;s Design Philosophy
@@ -181,9 +196,8 @@ export default function PortfolioPage() {
       {/* FOOTER / CONTACT */}
       <section id="contact" className="bg-[#EEEDE9] border-t border-black/5">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[85vh]">
-          
           {/* LEFT SIDE - THE IMAGE */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
@@ -197,7 +211,7 @@ export default function PortfolioPage() {
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-[1.5s] ease-in-out"
             />
-             {/* Subtle overlay to ensure text next to it pops, if needed. Currently unused but good to have. */}
+            {/* Subtle overlay to ensure text next to it pops, if needed. Currently unused but good to have. */}
             <div className="absolute inset-0 bg-black/0" />
           </motion.div>
 
@@ -210,24 +224,23 @@ export default function PortfolioPage() {
             <span className="text-[10px] uppercase tracking-[0.6em] text-zinc-400 block mb-8">
               Inquiries
             </span>
-            
+
             <h2 className="font-serif text-3xl md:text-4xl font-light mb-16 leading-snug text-[#111]">
               Start the conversation regarding your next project.
             </h2>
 
             {/* Clean Contact Stack */}
             <div className="space-y-12">
-              
               {/* Email Block */}
               <div className="group">
                 <span className="text-[9px] uppercase tracking-[0.4em] text-zinc-400 block mb-3">
                   Email Directly
                 </span>
-                <a 
-                  href="mailto:contact@gautam.com" 
+                <a
+                  href="mailto:gautamarchitizer@gmail.com"
                   className="text-lg md:text-xl tracking-[0.05em] font-light border-b border-black/20 pb-2 group-hover:border-black/60 group-hover:opacity-60 transition-all duration-500"
                 >
-                  contact@gautam.com
+                  gautamarchitizer@gmail.com
                 </a>
               </div>
 
@@ -236,19 +249,34 @@ export default function PortfolioPage() {
                 <span className="text-[9px] uppercase tracking-[0.4em] text-zinc-400 block mb-3">
                   Call Studio
                 </span>
-                <a 
-                  href="tel:+919876543210" 
-                  className="text-lg md:text-xl tracking-[0.05em] font-light border-b border-black/20 pb-2 group-hover:border-black/60 group-hover:opacity-60 transition-all duration-500"
-                >
-                  +91 98765 43210
-                </a>
+                <div className="flex flex-col gap-4">
+                  <a
+                    href="tel:+917488613737"
+                    className="group inline-block w-fit text-lg md:text-xl tracking-[0.05em] font-light transition-transform duration-300 hover:scale-[1.08]"
+                  >
+                    <span className="relative inline-block">
+                      +91 74886 13737
+                      <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-black/30 transition-all duration-300 group-hover:bg-black group-hover:scale-x-90 origin-left" />
+                    </span>
+                  </a>
+
+                  <a
+                    href="tel:+918436969369"
+                    className="group inline-block w-fit text-lg md:text-xl tracking-[0.05em] font-light transition-transform duration-300 hover:scale-[1.08]"
+                  >
+                    <span className="relative inline-block">
+                      +91 84369 69369
+                      <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-black/30 transition-all duration-300 group-hover:bg-black group-hover:scale-x-90 origin-left" />
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
             <div className="mt-20 pt-8 border-t border-black/5">
-                <p className="text-[10px] uppercase tracking-[0.4em] text-zinc-400">
+              <p className="text-[10px] uppercase tracking-[0.4em] text-zinc-400">
                 Based in India — Available Globally
-                </p>
+              </p>
             </div>
           </motion.div>
         </div>
